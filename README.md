@@ -8,5 +8,18 @@ __Fine-tuned LLMs__ are created by taking base LLMs and further training them on
 
 Adapting an existing LLM for your task is called __prompt engineering__.  The main task of the software engineer working with LLMs is to take an existing LLM and work out how to get it to accomplish the task you need for your application.
 
+Types of prompts
+* __Zero-Shot__ Prompting
+  * Chain of thought - "Think step by step"
+  * __RAG__ or Retreival-Augmented Generation
+    * prepend `context:` to the prompt
+  * Tool Calling
+    * prepend with a list of `Tools:`
+* __Few-shot__ prompting - "providing the LLM with examples of other questions and the correct
+answers, which enables the LLM to learn how to perform a new task without going
+through additional training or fine-tuning."
+  * Static few-shot prompting
+  * Dynamic few-shot prompting
+
 ## Chapter 1: LLM Fundamentals with LangChain
 
